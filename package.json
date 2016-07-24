@@ -1,0 +1,19 @@
+{
+  "name": "stream adventure app",
+  "version": "1.3.0",
+  "description": "the test of tutorial of the stream Adeventure",
+  "main": "getafile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "npm",
+    "stream"
+  ],
+  "author": "zhangtuo",
+  "license": "ISC",
+  "dependencies": {
+    "through2": "^2.0.1"
+  }
+}
