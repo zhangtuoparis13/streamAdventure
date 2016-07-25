@@ -28,10 +28,12 @@ module.exports = function (counter) {
     return duplexer({objectMode: true}, input, counter);
 
     function write (row, _, next) {
+        console.log("row",row,typeof(row))
         counts[row.country] = (counts[row.country] || 0) + 1;
         next();
     }
     function end (done) {
+        console.log('counter',counter.setCounts,counts)
         counter.setCounts(counts);
         done();
     }
